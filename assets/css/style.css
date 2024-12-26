@@ -1,0 +1,68 @@
+.sidebar {
+    background-color: black;
+    color: white;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: rgb(33 37 41) !important;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+#carouselExampleDark {
+    height: 500px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+.row>* {
+
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff5733;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    border-radius: 50%;
+}
+
+.carousel-indicators button {
+    background-color: #ff5733;
+}
+
+
