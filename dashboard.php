@@ -19,25 +19,10 @@ ob_start();
 
 <div class="comtainer">
     <div class="row">
-        <div class="col-md-2 sidebar ">
-            <ul style="list-style: none;">
-                <li>
-                    <a href="dashboard.ph " class="text-decoration-none ">
-                        <i class="fa fa-home"></i>
-                        Home
-                    </a>
+        <!-- sidebar  -->
+        <?php
+        include 'sidebar.php'; ?>
 
-                </li>
-                <li>
-                    <a href="logout.php" class="text-decoration-none ">
-                        <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        Logout
-                    </a>
-
-                </li>
-            </ul>
-
-        </div>
         <div class="col-md-10">
             <div class="container mt-5" id="dashboard">
                 <h2 class="text-center">Welcome, <?php echo $user['name']; ?></h2>
@@ -50,7 +35,7 @@ ob_start();
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <!-- <th>Actions</th> -->
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -63,7 +48,7 @@ ob_start();
                                     echo "<td>" . $row['id'] . "</td>";
                                     echo "<td>" . $row['name'] . "</td>";
                                     echo "<td>" . $row['email'] . "</td>";
-                                    // echo "<td><a href='edit_user.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm'>Edit</a></td>";
+                                    echo "<td><a href='edit_user.php?id=" . urlencode($row['id']) . "' class='btn btn-primary btn-sm'>Edit</a></td>";
                                     echo "</tr>";
                                 }
                             } else {
