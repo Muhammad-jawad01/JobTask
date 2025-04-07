@@ -1,0 +1,11 @@
+zip -r public_html.zip /home/slash.casino/public_html
+
+
+scp -r root@77.37.54.138:/home/slash.casino/public_html ~/Downloads
+
+
+ssh root@77.37.54.435
+
+
+Slash@123456
+scp -r root@77.37.54.138:/home/slash.casino/public_html.zip ~/Downloads
